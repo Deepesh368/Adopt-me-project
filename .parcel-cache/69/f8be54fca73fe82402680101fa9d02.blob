@@ -1,0 +1,31 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require("react");
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require("react-dom");
+  var _reactDomDefault = _parcelHelpers.interopDefault(_reactDom);
+  const Pet = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {}, [/*#__PURE__*/_reactDefault.default.createElement("h1", {}, "Luna????"), /*#__PURE__*/_reactDefault.default.createElement("h2", {}, "Dog"), /*#__PURE__*/_reactDefault.default.createElement("h2", {}, "Havanese")])
+    );
+  };
+  _c = Pet;
+  const App = () => {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {}, [/*#__PURE__*/_reactDefault.default.createElement("h1", {}, "Adopt Me!"), /*#__PURE__*/_reactDefault.default.createElement(Pet), /*#__PURE__*/_reactDefault.default.createElement(Pet), /*#__PURE__*/_reactDefault.default.createElement(Pet)])
+    );
+  };
+  _c2 = App;
+  _reactDomDefault.default.render(/*#__PURE__*/_reactDefault.default.createElement(App), document.getElementById("root"));
+  var _c, _c2;
+  $RefreshReg$(_c, "Pet");
+  $RefreshReg$(_c2, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
