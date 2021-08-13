@@ -1,6 +1,6 @@
 # Adopt-me-project
 
-Created an online application to browse adoptable pets as part of learning React.js with "frontendmasters".
+Created an online application to browse adoptable pets as part of learning React.js.
 
 Used React features such as hooks, effects, context, and portals. Also learned about using tools such as Parcel, ESLint, Prettier, and React Router.
 
